@@ -1,4 +1,9 @@
-title>Mi Página Interactiva</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Interactiva</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -47,91 +52,3 @@ title>Mi Página Interactiva</title>
   <script src="js/script.js"></script>
 </body>
 </html>
-2.	css/style.css:
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #f0f4f8, #dfe9f3);
-  color: #333;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-header {
-  background-color: #6c63ff;
-  color: white;
-  padding: 30px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.subtitulo {
-  font-style: italic;
-  font-size: 1.2em;
-}
-
-main {
-  padding: 40px 20px;
-}
-
-section {
-  margin-bottom: 50px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #ffffffdd;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-input {
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 60%;
-}
-
-button {
-  padding: 10px 25px;
-  font-size: 16px;
-  background-color: #6c63ff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  margin-top: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #574fd6;
-}
-
-footer {
-  background-color: #6c63ff;
-  color: white;
-  padding: 15px;
-  margin-top: 50px;
-}
-3.	js/script.js:
-function saludar() {
-  let nombre = document.getElementById("nombre").value;
-
-  if (nombre.trim() === "") {
-    document.getElementById("mensaje").innerText = "Por favor, escribe tu nombre.";
-  } else {
-    document.getElementById("mensaje").innerText = "¡Hola, " + nombre + "! Bienvenida ✨";
-  }
-}
-
-function cambiarImagen() {
-  let imagen = document.getElementById("imagen");
-
-  if (imagen.src.includes("gatito.jpg")) {
-    imagen.src = "img/perrito.jpg";
-  } else {
-    imagen.src = "img/gatito.jpg";
-  }
-}
